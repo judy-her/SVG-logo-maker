@@ -8,18 +8,25 @@ const questions = () => {
     {
       name: 'text',
       type: 'input',
-      message: 'What three characters should be in your svg?',
+      message: 'What three characters do you want the text to be in your svg ?',
     },
     {
-      name: 'color',
+      name: 'text-color',
       type: 'input',
-      message: 'What color will your svg be? Type color name or hexadecimal: ',
+      message:
+        'What color do you want your text to be? Type color name or hexadecimal number: ',
     },
     {
       name: 'shape',
       type: 'list',
       message: 'What shape will your svg be? ',
       choices: ['cirlce', 'triangle', 'square'],
+    },
+    {
+      name: 'shape-color',
+      type: 'input',
+      message:
+        'What color will your shape be? Type color name or hexadecimal number: ',
     },
   ]);
 };
@@ -28,7 +35,7 @@ const questions = () => {
 const init = () => {
   questions()
     .then((answers) => writeFile('logo.svg', generateSVG(answers)))
-    .then(() => console.log('SVG succesfully created'))
+    .then(() => console.log('Generated logo.svg'))
     .catch((err) => console.log(err));
 };
 
