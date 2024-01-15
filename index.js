@@ -28,6 +28,16 @@ const questions = () => {
       message:
         'What color will your shape be? Type color name or hexadecimal number: ',
     },
+    {
+      name: 'width',
+      type: 'input',
+      message: 'What should the width be?',
+    },
+    {
+      name: 'height',
+      type: 'input',
+      message: 'What should the height be?',
+    },
   ]);
 };
 
