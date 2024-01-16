@@ -8,8 +8,8 @@ describe('Square', () => {
       const shapeColor = 'blue';
       const textColor = 'white';
       const text = 'SVG';
+      //IMPORTANTthese passed in new Square must be in order!
       const newSquare = new Square(points, shapeColor, text, textColor);
-      //   const result = `<polygon points="${points}" fill="${shapeColor}" />`;
       const result = `<polygon points="${points}" fill="${shapeColor}" /> <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="${textColor}" font-size="70">
     ${text}
  </text>`;

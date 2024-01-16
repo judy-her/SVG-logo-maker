@@ -6,8 +6,10 @@ describe('Circle', () => {
     it('Should render a circle  with green bg', () => {
       const radius = 10;
       const shapeColor = 'green';
-      const newCircle = new Circle(radius, shapeColor);
-      const result = `<circle cx="${radius}" cy="${radius}" r="${radius}" fill="${shapeColor}"/>`;
+      const textColor = 'grey';
+      const text = 'Hello';
+      const newCircle = new Circle(radius, shapeColor, text, textColor);
+      const result = `<circle cx="${radius}" cy="${radius}" r="${radius}" fill="${shapeColor}"/> <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="${textColor}" font-size="70">${text}</text>`;
       expect(newCircle.render()).toEqual(result);
     });
   });

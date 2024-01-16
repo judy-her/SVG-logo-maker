@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1705381943103" clover="3.2.0">
-  <project timestamp="1705381943103" name="All files">
-    <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6" elements="26" coveredelements="25" complexity="0" loc="18" ncloc="18" packages="1" files="3" classes="3"/>
+<coverage generated="1705382972203" clover="3.2.0">
+  <project timestamp="1705382972203" name="All files">
+    <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6" elements="28" coveredelements="27" complexity="0" loc="20" ncloc="20" packages="1" files="3" classes="3"/>
     <file name="circle.js" path="/Users/judithhernandez/Documents/ucb challenges/SVG-Logo-Maker/lib/circle.js">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
       <line num="6" count="1" type="stmt"/>
       <line num="7" count="1" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
     </file>
     <file name="square.js" path="/Users/judithhernandez/Documents/ucb challenges/SVG-Logo-Maker/lib/square.js">
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
