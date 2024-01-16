@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for circle.js</title>
+    <title>Code coverage report for square.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> circle.js</h1>
+        <h1><a href="index.html">All files</a> square.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -30,9 +30,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
@@ -93,18 +93,18 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const SVGElement = require('../lib/svgElement.js');
 &nbsp;
-class Circle extends SVGElement {
-  constructor(radius, color) {
-    super(radius * 2, radius * 2);
-    this.radius = radius;
+class Square extends SVGElement {
+  constructor(points, color) {
+    super();
+    this.points = points || <span class="branch-1 cbranch-no" title="branch not covered" >'0,0 100,0 100,100 0,100';</span>
     this.color = color;
   }
   render() {
-    return `&lt;circle cx="${this.radius}" cy="${this.radius}" r="${this.radius}" fill="${this.color}"/&gt;`;
+    return `&lt;polygon points="${this.points}" fill="${this.color}" /&gt;`;
   }
 }
 &nbsp;
-module.exports = Circle;
+module.exports = Square;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

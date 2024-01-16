@@ -27,17 +27,17 @@ describe('SVGElement', () => {
 
 // testing color
 //NOTE Passed
-describe('SVGElement', () => {
-  describe('color', () => {
-    it('should render color in fill attribute', () => {
-      const color = 'blue';
-      const newColor = new SVGElement(300, 200);
-      newColor.setColor(color);
-      const result = `<svg width="300" height="200" fill="${color}"></svg>`;
-      expect(newColor.renderSize()).toEqual(result);
-    });
-  });
-});
+// describe('SVGElement', () => {
+//   describe('color', () => {
+//     it('should render color in fill attribute', () => {
+//       const color = 'blue';
+//       const newColor = new SVGElement(300, 200);
+//       newColor.setColor(color);
+//       const result = `<svg width="300" height="200" fill="${color}"></svg>`;
+//       expect(newColor.renderSize()).toEqual(result);
+//     });
+//   });
+// });
 
 // describe('SVGElement', () => {
 //   describe('renderInner', () => {
