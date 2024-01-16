@@ -11,7 +11,7 @@ const questions = () => {
       message: 'What three characters do you want the text to be in your svg ?',
     },
     {
-      name: 'text-color',
+      name: 'textColor',
       type: 'input',
       message:
         'What color do you want your text to be? Type color name or hexadecimal number: ',
@@ -23,7 +23,7 @@ const questions = () => {
       choices: ['cirlce', 'triangle', 'square'],
     },
     {
-      name: 'shape-color',
+      name: 'shapeColor',
       type: 'input',
       message:
         'What color will your shape be? Type color name or hexadecimal number: ',

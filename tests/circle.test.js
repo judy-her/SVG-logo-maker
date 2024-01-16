@@ -5,9 +5,9 @@ describe('Circle', () => {
   describe('render circle', () => {
     it('Should render a circle  with green bg', () => {
       const radius = 10;
-      const color = 'green';
-      const newCircle = new Circle(radius, color);
-      const result = `<circle cx="${radius}" cy="${radius}" r="${radius}" fill="${color}"/>`;
+      const shapeColor = 'green';
+      const newCircle = new Circle(radius, shapeColor);
+      const result = `<circle cx="${radius}" cy="${radius}" r="${radius}" fill="${shapeColor}"/>`;
       expect(newCircle.render()).toEqual(result);
     });
   });
