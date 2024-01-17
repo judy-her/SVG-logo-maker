@@ -1,10 +1,23 @@
 //packages for application
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
+const { generateSVG } = require('./generateSVG.js');
 
 //used writeFileSync method
 const questions = () => {
   return inquirer.prompt([
+    {
+      name: 'shape',
+      type: 'list',
+      message: 'What shape will your svg be? ',
+      choices: ['circle', 'triangle', 'square'],
+    },
+    {
+      name: 'shapeColor',
+      type: 'input',
+      message:
+        'What color will your shape be? Type color name or hexadecimal number: ',
+    },
     {
       name: 'text',
       type: 'input',
@@ -16,18 +29,7 @@ const questions = () => {
       message:
         'What color do you want your text to be? Type color name or hexadecimal number: ',
     },
-    {
-      name: 'shape',
-      type: 'list',
-      message: 'What shape will your svg be? ',
-      choices: ['cirlce', 'triangle', 'square'],
-    },
-    {
-      name: 'shapeColor',
-      type: 'input',
-      message:
-        'What color will your shape be? Type color name or hexadecimal number: ',
-    },
+
     {
       name: 'width',
       type: 'input',
