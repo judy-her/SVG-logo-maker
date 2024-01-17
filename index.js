@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
 const generateSVG = require('./generateSVG.js');
+console.log(generateSVG);
 
 //used writeFileSync method
 const questions = () => {
@@ -15,8 +16,7 @@ const questions = () => {
     {
       name: 'shapeColor',
       type: 'input',
-      message:
-        'What color will your shape be? Type color name or hexadecimal number: ',
+      message: 'Shape Color: Type color name or hexadecimal number: ',
     },
     {
       name: 'text',
@@ -26,27 +26,37 @@ const questions = () => {
     {
       name: 'textColor',
       type: 'input',
-      message:
-        'What color do you want your text to be? Type color name or hexadecimal number: ',
+      message: 'Text Color: Type color name or hexadecimal number: ',
     },
 
-    {
-      name: 'width',
-      type: 'input',
-      message: 'What should the width be?',
-    },
-    {
-      name: 'height',
-      type: 'input',
-      message: 'What should the height be?',
-    },
+    // {
+    //   name: 'width',
+    //   type: 'input',
+    //   message: 'What should the width be?',
+    // },
+    // {
+    //   name: 'height',
+    //   type: 'input',
+    //   message: 'What should the height be?',
+    // },
   ]);
 };
 
 // write file
 const init = () => {
   questions()
-    .then((answers) => writeFile('logo.svg', generateSVG(answers)))
+    .then((answers) => {
+      const svgContent = generateSVG({
+        shape: answers.shape,
+        shapeColor: answers.shapeColor,
+        text: answers.text,
+        textColor: answers.textColor,
+        fontSize: answers.fontSize,
+        textX: answers.textX,
+        textY: answers.textY,
+      });
+      return writeFile('logo.svg', svgContent);
+    })
     .then(() => console.log('Generated logo.svg'))
     .catch((err) => console.log(err));
 };

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+
+  <!-- shape selected from prompt -->
+  <polygon points="blue" fill="svg" /> <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="undefined" font-size="70">
+    white
+ </text>
+
+  <text x="undefined" y="undefined" alignment-baseline="middle" text-anchor="middle" fill="white" font-size="undefined">
+  svg
+</text>
+
+</svg>
