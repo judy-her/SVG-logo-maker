@@ -1,7 +1,7 @@
 //packages for application
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
-const { generateSVG } = require('./generateSVG.js');
+const generateSVG = require('./generateSVG.js');
 
 //used writeFileSync method
 const questions = () => {
@@ -43,7 +43,7 @@ const questions = () => {
   ]);
 };
 
-//write file
+// write file
 const init = () => {
   questions()
     .then((answers) => writeFile('logo.svg', generateSVG(answers)))
