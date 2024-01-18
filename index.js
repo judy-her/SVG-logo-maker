@@ -27,17 +27,6 @@ const questions = () => {
       type: 'input',
       message: 'Text Color: Type color name or hexadecimal number: ',
     },
-
-    // {
-    //   name: 'width',
-    //   type: 'input',
-    //   message: 'What should the width be?',
-    // },
-    // {
-    //   name: 'height',
-    //   type: 'input',
-    //   message: 'What should the height be?',
-    // },
   ]);
 };
 
