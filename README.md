@@ -16,6 +16,8 @@ This application is a logo.svg generator. It is easy to use and can be invoked u
 - [Questions](#questions)
 
 ## Installation
+Need to install node.js
+Need to install inquirer 
 
 To Install necessary dependencies, make sure to run the following command:
 `npm i`
