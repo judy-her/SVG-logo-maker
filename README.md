@@ -28,10 +28,10 @@ To see a video demo of this app click the link below:
 https://drive.google.com/file/d/1YhHnfzAWgoBNiWXMBNLx0sqxN1pSmqoV/view
 
 Screenshot of app in use:
-![screenshot-app](public/images/Screenshot-svg-app.png)
+![screenshot-app](assets/images/Screenshot-svg-app.png)
 
 Screenshot of SVG rendered in use:
-![screenshot-rendered-shape](public/images/Screenshot-svg-rendered.png)
+![screenshot-rendered-shape](assets/images/Screenshot-svg-rendered.png)
 
 ## License
 
