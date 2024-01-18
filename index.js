@@ -2,7 +2,6 @@
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
 const generateSVG = require('./generateSVG.js');
-console.log(generateSVG);
 
 //used writeFileSync method
 const questions = () => {
