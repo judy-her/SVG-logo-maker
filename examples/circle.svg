@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+
+  <!-- shape selected from prompt -->
+  <circle cx="150" cy="100" r="100" fill="purple"/> 
+    
+  
+  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#ffc0cb" font-size="70">
+  Hi!
+</text>
+
+</svg>
