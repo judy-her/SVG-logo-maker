@@ -27,8 +27,11 @@ https://github.com/judy-her/SVG-logo-maker
 To see a video demo of this app click the link below:
 https://drive.google.com/file/d/1YhHnfzAWgoBNiWXMBNLx0sqxN1pSmqoV/view
 
-Don't forget to add a screenshot by creating assets/images and use the following syntax:
-![alt text](assets/images/screenshot.png)
+Screenshot of app in use:
+![screenshot-app](public/images/Screenshot-svg-app.png)
+
+Screenshot of SVG rendered in use:
+![screenshot-rendered-shape](public/images/Screenshot-svg-rendered.png)
 
 ## License
 
